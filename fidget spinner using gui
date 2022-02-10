@@ -1,21 +1,38 @@
 from turtle import *
+
 state = {'turn': 0}
 def spinner():
     clear()
     angle = state['turn']/10
     right(angle)
     forward(100)
-    dot(120, 'red')
+    dot(80, 'violet')
     back(100)
-    right(120)
+    right(51.4285)
     forward(100)
-    dot(120, 'green')
+    dot(80, 'indigo')
     back(100)
-    right(120)
+    right(51.4285)
     forward(100)
-    dot(120, 'blue')
+    dot(80, 'blue')
     back(100)
-    right(120)
+    right(51.4285)
+    forward(100)
+    dot(80, 'green')
+    back(100)
+    right(51.4285)
+    forward(100)
+    dot(80, 'yellow')
+    back(100)
+    right(51.4285)
+    forward(100)
+    dot(80, 'orange')
+    back(100)
+    right(51.4285)
+    forward(100)
+    dot(80, 'red')
+    back(100)
+    right(51.4285)
     update()
 def animate():
     if state['turn']>0:
@@ -25,7 +42,6 @@ def animate():
     ontimer(animate, 20)
 def flick():
     state['turn']+=10
-
 setup(420, 420, 370, 0)
 hideturtle()
 tracer(False)
