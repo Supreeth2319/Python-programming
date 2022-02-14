@@ -1,7 +1,7 @@
 import random
 print("Welcome to Hangman Game")
-print("Guess the word from the topic")
-word=['varun','supreeth','vikas','ullas','sumukh','danush','santosh']
+print("Guess the word from the topic my friends")
+word=['varun','supreeth','vikas','ullas','sumukh','danush','santosh','bhargav','sanjay','suhas']
 word=random.choice(word)
 print("Guess the character")
 guess=""
