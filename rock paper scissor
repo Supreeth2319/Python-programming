@@ -1,6 +1,8 @@
 import random
 while True:
+    print("-------------------------")
     print("1--rock,2--paper,3--scissor")
+    print("--------------------------")
     uc=int(input("Enter your choice:"))
     print("The User Choice is ",uc)
     if(uc==1):
