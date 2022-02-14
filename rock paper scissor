@@ -1,0 +1,36 @@
+import random
+while True:
+    print("1--rock,2--paper,3--scissor")
+    uc=int(input("Enter your choice:"))
+    print("The User Choice is ",uc)
+    if(uc==1):
+        print("User Choice is ROCK")
+    elif(uc==2):
+        print("User Choice is PAPER")
+    elif(uc==3):
+        print("User Choice is SCISSOR")
+    else:
+        print("Invalid statement,Try again")
+        continue
+    cc=random.randint(1,3)
+    print("Computer Choice is",cc)
+    if(uc==1 and cc==2):
+        print("Computer Wins")
+    elif(uc==1 and cc==3):
+        print("User Wins")
+    elif(uc==2 and cc==3):
+        print("Computer Wins")
+    elif(uc==2 and cc==1):
+        print("User Wins")
+    elif(uc==3 and cc==1):
+        print("Computer Wins")
+    elif(uc==3 and cc==2):
+        print("User Wins")
+    elif(uc==cc):
+        print("Match Tie")
+    ans=input("Do you want to continue?yes or no:")
+    if(ans=="yes"):
+        continue
+    elif(ans=="no"):
+        print("Thank You")
+        break
