@@ -4,7 +4,9 @@ while True:
     print("1--rock,2--paper,3--scissor")
     print("--------------------------")
     uc=int(input("Enter your choice:"))
+    print("-------------------------")
     print("The User Choicee is ",uc)
+    print("------------------------")
     if(uc==1):
         print("User Choice is ROCK")
     elif(uc==2):
